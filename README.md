@@ -1,4 +1,4 @@
-# Montari - en klatrevæg med spejlvendte sider.
+# Montari - en klatrevæg med spejlet sider.
 
 Denne mappe er lavet til prototype dokumentation, herunder kode til vores webservice og database.
 
