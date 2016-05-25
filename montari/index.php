@@ -5,6 +5,7 @@ require_once("dbconnection.php");
 $deviceID = "370045000f47343432313031";
 $accessToken = "3fe4bfb6eee5dfb29e74234a79664e4b4113e28c";
 $command = "sendData";
+$test = "test1234";
 
 $url = "https://api.particle.io/v1/devices/".$deviceID."/".$command."?access_token=".$accessToken;
 
@@ -51,7 +52,7 @@ function makePostRequest($url, $data) {
 	Blå: <input type="radio" name="farve" value="blå"><br>
 	Rød: <input type="radio" name="farve" value="rød"><br>
 	<br> <br>
-	Vælg antal greb: 
+	Vælg antal greb:
 	<input type="number" name="greb" min="1" max="5"><br><br>
     <input type="submit" value="SPIL!">
 </form>
