@@ -1,0 +1,35 @@
+<div class="play view" ng-controller="playController">
+
+  <div class="verticalAlign">
+    <div class="col-xs-12">
+      <h2>Vælg spil</h2>
+
+      <div class="theend"></div>
+    </div>
+
+    <div class="col-xs-6">
+      <a href="#opponent" ng-click="selectGame('team')">
+        <i class="fa fa-slideshare" aria-hidden="true"></i>
+        <p>
+          Samarbejd
+        </p>
+      </a>
+
+    </div>
+
+    <div class="col-xs-6">
+        <a href="#opponent"  ng-click="selectGame('opp')">
+          <i class="fa fa-bomb" aria-hidden="true"></i>
+          <p>
+            Modstander
+          </p>
+        </a>
+    </div>
+  </div>
+
+</div>
+
+
+
+<!-- Special stylesheet for fullscreens -->
+<link rel="stylesheet" href="css/fullscreen.css" />

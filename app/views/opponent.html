@@ -1,0 +1,24 @@
+<div class="opponent view" ng-controller="playController">
+
+  <div class="col-xs-12">
+    <h2>Vælg makker</h2>
+
+    <div class="oppPlayer" ng-repeat="opponent in opponents">
+      <a href="#level" ng-click="selectOpp(opponent.id)">
+        <div class="oppImage" style="background-image:url('{{opponent.picture}}')"></div>
+
+        <div class="oppText">
+          {{ opponent.name }}
+        </div>
+
+        <div class="theend"></div>
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Special stylesheet for fullscreens -->
+<link rel="stylesheet" href="css/fullscreen.css" />
