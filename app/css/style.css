@@ -1,0 +1,611 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Abel);
+
+
+body{
+  font-family:'Abel', sans-serif;
+  background-color:#eee;
+  color:#999999;
+}
+
+#wrapper{
+  height:100%;
+  padding-top:1px;
+  max-width:500px;
+  margin:0 auto;
+  background-color:#fff;
+  overflow:hidden;
+}
+
+.view{
+  clear:both;
+  margin-top:20px;
+}
+
+.theend{
+  width:100%;
+  clear:both;
+}
+
+input, textarea {
+  outline:none;
+}
+
+a, a:visited{
+  color:inherit;
+  text-decoration:none !important;
+}
+
+a:hover{
+  color:inherit;
+}
+
+.verticalAlign{
+  position:relative;
+  top:40%;
+  -webkit-transform:translateY(-50%);
+  -ms-transform:translateY(-50%);
+  transform:translateY(-50%);
+}
+
+/* --- PLAY BUTTON --- */
+#playButton{
+  padding:22px 24px;
+  border-radius:60px;
+  background-color:#fff;
+  position:fixed;
+  bottom:25px;
+  right:25px;
+  box-shadow:3px 4px 5px rgba(0,0,0,0.2);
+}
+
+#triangle{
+  width:0;
+	height:0;
+	border-top:8px solid transparent;
+	border-bottom:8px solid transparent;
+
+	border-left:13px solid #1DCE6C;
+}
+
+/* --- HEADER --- */
+header{
+  text-align:center;
+}
+
+header #logo{
+  margin:20px 0;
+}
+
+header #logo svg{
+  fill:#999999;
+  width:80px;
+}
+
+header #logo span{
+  font-size:18px;
+  color:#999999;
+  border:2px solid #999999;
+  width:auto;
+  padding:1px 7px;
+}
+
+/* Navigation */
+#nav{
+  clear:both;
+  font-size:22px;
+}
+
+#nav a{
+  color:#eee;
+}
+
+#nav li.active a{
+  color:#1DCE6C;
+}
+
+
+/* --- LOGIN --- */
+.login, .createUser{
+  color:#fff;
+  height:500px;
+  display:block;
+  font-size:18px;
+}
+
+
+#login{
+  margin:0 auto;
+  width:75%;
+  text-align:center;
+  position:relative;
+  top:40%;
+  -webkit-transform:translateY(-50%);
+  -ms-transform:translateY(-50%);
+  transform:translateY(-50%);
+}
+
+#login input{
+  border:none;
+  background-color:#33714F;
+  text-align:center;
+  padding:10px;
+  width:100%;
+  margin:10px 0;
+}
+
+#login input[type="submit"]{
+  border:2px solid #fff;
+  width:auto;
+  background:transparent;
+  padding:1px 7px;
+  text-transform:uppercase;
+}
+
+/* createUser */
+
+#createUser{
+  width:100%;
+  color:#33714F;
+  text-align:center;
+  position:fixed;
+  top:90%;
+  left:0;
+}
+
+
+
+/* --- PERSON --- */
+/* Presentation*/
+#personPresentation{
+  display:block;
+  clear:both;
+  padding:20px 30px;
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:bottom right;
+}
+
+#personPresentation h2{
+  font-size:35px;
+  position:relative;
+  top:50%;
+  -webkit-transform:translateY(-50%);
+  -ms-transform:translateY(-50%);
+  transform:translateY(-50%);
+}
+
+
+/* Form */
+#personForm{
+  font-size:20px;
+  background-color:#1DCE6C;
+  padding:20px 30px;
+  color:#333;
+}
+
+#personForm span{
+  float:left;
+}
+
+#formIndicators{
+  float:left;
+  margin-left:10px;
+}
+
+#formIndicators div{
+  float:left;
+  width:20px;
+  height:20px;
+  margin:3px 5px;
+}
+
+.losed{
+  background:repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 4px,
+    #159E52 3px,
+    #159E52 6px
+  );
+  border:2px solid #159E52;
+}
+
+.won{
+  border:2px solid #fff;
+}
+
+/* Stats */
+#personStats{
+  color:#fff;
+  padding:20px 30px;
+  background-color:#33714F;
+  background-image:url('../img/statsBg.png');
+  background-position:bottom;
+  background-size:contain;
+  background-repeat:no-repeat;
+}
+
+#personStats h2{
+  float:left;
+  font-size:75px;
+}
+
+#personStats p{
+  width:40px;
+  float:left;
+  margin-left:10px;
+  margin-top:50px;
+  line-height:1;
+}
+
+
+/* --- STATS --- */
+.stats .col-xs-6{
+  text-align:center;
+}
+
+.number{
+  font-size:75px;
+  margin:-10px 0 -20px 0;
+  color:#1DCE6C;
+}
+
+/* StatsTop */
+#statsTop .col-xs-6{
+  height:100%;
+  border-bottom:1px #999 solid;
+}
+
+#statsTop .col-xs-6:first-child{
+  border-right:1px #999 solid;
+}
+
+#statsTop div{
+  position:relative;
+  top:50%;
+  -webkit-transform:translateY(-50%);
+  -ms-transform:translateY(-50%);
+  transform:translateY(-50%);
+}
+
+/* StatsTime */
+#statsTime{
+  padding:20px 30px;
+  background-image:url('../img/statsBgLittle.png');
+  background-position:bottom;
+  background-size:contain;
+  background-repeat:no-repeat;
+}
+
+#statsTime h2{
+  float:left;
+}
+
+#statsTime p{
+  width:40px;
+  float:left;
+  margin-left:10px;
+  margin-top:44px;
+  line-height:1;
+}
+
+/* StatsBottom */
+#statsBottom{
+  background-color:#33714F;
+  padding:0 30px;
+}
+
+#statsBottom .statThirdHalf{
+  padding:4px 0 80px 0;
+  clear:both;
+}
+
+#statsBottomLine{
+  width:120px;
+  height:2px;
+  background-color:#333;
+  margin-left:-30px;
+}
+
+#statsBottom .number{
+  font-size:50px;
+  margin-top:0px;
+  color:#1DCE6C;
+  margin-left:0px;
+}
+
+#statsBottom p{
+  text-transform:uppercase;
+  float:left;
+  margin-top:37px;
+  color:#fff;
+  margin-left:10px;
+}
+
+
+
+/* --- RANKING --- */
+.ranking{
+  background-color:#1DCE6C;
+  height:730px;
+  color:#fff;
+}
+.ranking ul{
+  font-size:30px;
+}
+
+.ranking ul li{
+  padding:20px 30px;
+  border-bottom: 1px #17a155 solid;
+}
+
+.ranking span{
+  color:#33714F;
+  margin-right:10px;
+}
+
+/* --- SETTINGS --- */
+.settingArea{
+  padding:20px 30px;
+  font-size:24px;
+}
+
+.settingArea .col-xs-6, .settingArea .col-xs-12, .settingArea .col-xs-9, .settingArea .col-xs-3, .settingArea .col-xs-4, .settingArea .col-xs-8{
+  padding:0px;
+}
+
+.settingOption{
+  padding:12px 0;
+  clear:both;
+  margin-bottom:30px;
+}
+
+.settingArea .settingOption input{
+  color:#333;
+  text-align:right;
+  padding:5px 0;
+  font-size:14px;
+  border:none;
+}
+
+.settingOption .switch{
+  float:right;
+}
+
+
+
+#bottomSettings{
+  clear:both;
+  background-color:#33714F;
+  min-height:800px;
+  color:#fff;
+}
+
+.switch{
+  text-align:right;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position:relative;
+  display:inline-block;
+  width:60px;
+  height:34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position:absolute;
+  cursor:pointer;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  /*border:2px #fff solid;*/
+  background-color:#fff;
+  -webkit-transition:.4s;
+  transition:.4s;
+}
+
+.slider:before {
+  position:absolute;
+  content:"";
+  height:26px;
+  width:26px;
+  left:4px;
+  bottom:4px;
+  border:2px #33714F solid;
+  /*background-color:white;*/
+  -webkit-transition:.4s;
+  transition:.4s;
+}
+
+input:checked + .slider {
+  background-color:#1DCE6C;
+}
+
+input:focus + .slider {
+  box-shadow:0 0 1px #1DCE6C;
+}
+
+input:checked + .slider:before {
+  -webkit-transform:translateX(26px);
+  -ms-transform:translateX(26px);
+  transform:translateX(26px);
+  border-color:#fff;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius:34px;
+}
+
+.slider.round:before {
+  border-radius:50%;
+}
+
+
+/* PLAY */
+.play{
+  color:#33714F;
+  height:400px;
+  text-align:center;
+}
+
+.play h2{
+  font-size:30px;
+  color:#fff;
+  margin-top:-70px;
+  padding-bottom:50px;
+}
+
+.play .col-xs-6::before{
+  content:"";
+  position:absolute;
+  top:-30px;
+  left:102%;
+  height:200px;
+  border-right:2px solid #33BB70;
+}
+
+.play i{
+  font-size:80px;
+  margin-bottom:10px;
+}
+
+
+/* OPPONENT */
+.opponent{
+  height:660px;
+  text-align:center;
+  overflow:scroll;
+}
+
+.opponent h2{
+  font-size:30px;
+  color:#fff;
+  margin-top:0px;
+  padding-bottom:30px;
+}
+
+.opponent .oppPlayer{
+  padding:0 30px;
+  text-align:center;
+  clear:both;
+  margin-bottom:15px;
+}
+
+.opponent .oppImage{
+  float:left;
+  width:80px;
+  height:80px;
+  background-color:#fff;
+  background-size:cover;
+  border-radius:40px;
+}
+
+.opponent .oppText{
+  float:left;
+  color:#33714F;
+  font-size:24px;
+  float:left;
+  padding:30px 0 0 10px;
+}
+
+
+/* LEVEL */
+.level{
+  text-align:center;
+  color:#fff;
+}
+
+.level h2{
+  font-size:30px;
+  color:#fff;
+  margin-top:0px;
+  padding-bottom:30px;
+}
+
+.level span{
+  width:35px;
+  font-size:30px;
+  cursor:pointer;
+  float:left;
+  color:#33714F;
+}
+
+.level span:nth-child(2){
+  width:60px;
+  font-size:40px;
+  padding:0 10px;
+  text-align:center;
+  color:#fff;
+
+}
+
+.level span a{
+  padding:10px;
+  margin:0px 0;
+  padding-top:72px;
+}
+
+.level .selectNo{
+  width:130px;
+  margin:0 auto;
+}
+
+.level .selectLevel{
+  font-size:16px;
+  margin-bottom:35px;
+  color:#33714F;
+}
+
+.level .selectLevel svg{
+  stroke:#fff;
+}
+
+.level .selectLevel .active svg{
+  stroke:#33714F;
+}
+
+.level #level1 svg{
+  margin-top:43px;
+  height:75px;
+  margin-left:15px;
+}
+
+.level #level2 svg{
+  margin-top:19px;
+  height:101px;
+}
+
+.level #level3{
+  padding-left:0px;
+}
+
+.level #level3 svg{
+  margin-top:0px;
+  height:122px;
+}
+
+/* GOPLAY */
+.goplay{
+  color:#fff;
+  text-align:center;
+}
+
+.goplay h2{
+  margin-top:50px;
+  font-size:34px;
+}
+
+.goplay p{
+  font-size:20px;
+  margin-top:10px;
+}

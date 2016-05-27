@@ -1,0 +1,44 @@
+<div class="settings view" ng-controller="settingsController">
+
+  <section id="topSettings" class="settingArea">
+    <div class="settingOption">
+      <p class="col-xs-4">Navn</p>
+      <input type="text" class="col-xs-8" ng-model="name"></input>
+    </div>
+
+    <div class="settingOption">
+      <p class="col-xs-4">Email</p>
+      <input type="email" class="col-xs-8" ng-model="email"></input>
+    </div>
+
+    <div class="settingOption">
+      <p class="col-xs-12">Skift billede</p>
+    </div>
+
+    <div class="settingOption" ng-controller="loginController">
+      <p ng-click="logout()" class="col-xs-12">Log af</p>
+    </div>
+  </section>
+
+  <section id="bottomSettings" class="settingArea">
+    <div class="settingOption">
+      <p class="col-xs-9">Kan udfordres</p>
+      <label class="switch col-xs-3">
+        <input type="checkbox">
+        <div class="slider round"></div>
+      </label>
+    </div>
+
+
+    <div class="settingOption">
+      <p class="col-xs-9">Offentliggør resultater</p>
+      <label class="switch col-xs-3">
+        <input type="checkbox" checked="checked">
+        <div class="slider round"></div>
+      </label>
+    </div>
+
+
+  </section>
+
+</div>

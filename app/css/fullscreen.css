@@ -1,0 +1,20 @@
+nav{
+  display:none;
+}
+
+#wrapper{
+  background-color:#1DCE6C;
+}
+
+header #logo{
+  padding-top:50px;
+}
+
+header #logo svg{
+  width: 130px;
+  fill: #fff;
+}
+
+#playButton{
+  display:none;
+}

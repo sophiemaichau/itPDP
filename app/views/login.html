@@ -1,0 +1,22 @@
+<div class="login view">
+
+  <section id="login" ng-controller="loginController">
+    {{ loginFailed }}
+
+    <form ng-submit="login()">
+      <input type="email" ng-model="email" placeholder="Email">
+      <input type="password" ng-model="password" placeholder="Kode">
+      <input type="submit" name="login" value="Log ind">
+    </form>
+
+  </section>
+
+  <div id="createUser" ng-click="">
+    <a href="#createuser">Opret bruger</a>
+  </div>
+
+</div>
+
+
+<!-- Special stylesheet for fullscreens -->
+<link rel="stylesheet" href="css/fullscreen.css" />
